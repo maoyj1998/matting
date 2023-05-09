@@ -1,0 +1,10 @@
+checkpoints:
+  detector: ./checkpoints/yolox_l_8x8_300e_coco_20211126_140236-d3bd2b23.pth
+  kptnet: ./checkpoints/hrnet_w32_coco_256x192-c78dce93_20200708.pth
+  sam: ./checkpoints/sam_model/sam_vit_h_4b8939.pth
+  matting: ./checkpoints/SGHM-ResNet50.pth
+
+config_file:
+  detector: ./configs/mmdet_config/yolox/yolox_l_8xb8-300e_coco.py
+  kptnet: ./configs/mmpose_config/body_2d_keypoint/topdown_heatmap/coco/td-hm_hrnet-w32_8xb64-210e_coco-256x192.py
+  sam: vit_h
